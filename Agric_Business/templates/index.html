@@ -1,0 +1,30 @@
+
+<br>
+<style>
+  .card{
+  width: 300px;
+  }
+</style>
+<div class="container">
+<div class="cart-row">
+     {% for product in products %}
+      <div class="card">
+        <div class="card-image">
+          <img src="{{product.image.url}}">
+        </div>
+        <div class="card-content">
+        </div>
+        <p>{{product.name}}</p>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+            <p>
+                {{product.price}}
+            </p>
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+</div>
